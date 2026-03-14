@@ -190,7 +190,7 @@ const AdvocatePage = async ({
           <div className="bg-gray-200 overflow-hidden flex flex-col max-h-6xl min-h-[600px] ">
             <div className="flex flex-col items-center justify-center px-8 sm:px-8 lg:px-12 min-h-[500px]">
               <Image
-                src={advocate?.imageUrl}
+                src={advocate?.imageUrl as string}
                 alt="Attorney"
                 // border-radius: 50%, center image
                 className="w-[400px] h-[400px] object-cover object-top border-20 border-primary-foreground rounded-full "
@@ -266,7 +266,7 @@ const AdvocatePage = async ({
             <div className="flex flex-col gap-4">
               <h3 className="text-4xl">Participated Cases</h3>
               <div className="space-y-4">
-                {advocate?.participatedCases?.length > 0 ? (
+                {(advocate?.participatedCases as string[])?.length > 0 ? (
                   <ul className="list-disc list-inside space-y-1">
                     {advocate?.participatedCases.map((case_, index) => (
                       <li key={index} className="text-gray-700 ">
@@ -283,7 +283,7 @@ const AdvocatePage = async ({
             <div className="flex flex-col gap-4">
               <h3 className="text-4xl">Practice Area</h3>
               <div className="space-y-4">
-                {advocate?.practiceArea?.length > 0 ? (
+                {(advocate?.practiceArea as string[])?.length > 0 ? (
                   <ul className="list-disc list-inside space-y-1">
                     {advocate?.practiceArea.map((area, index) => (
                       <li key={index} className="text-gray-700 ">
