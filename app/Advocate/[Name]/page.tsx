@@ -57,6 +57,7 @@ Known for his structured legal strategy and client-focused approach, he speciali
     participatedCases: [
       'Surrogacy (Regulation) Act landmark matter featured in Indian Express',
     ],
+    imageUrl: '/attorney-1.jpg',
   },
   {
     Name: 'Puneet',
@@ -91,8 +92,10 @@ At Custodes Legis, he strengthens the firm’s litigation practice by providing 
     education: [
       'LL.B. (Hons.), Guru Gobind Singh Indraprastha University, Delhi',
     ],
-    languages: [],
+    languages: ['English', 'Hindi'],
+
     participatedCases: [],
+    imageUrl: '/attorney-6.jpeg',
   },
   {
     Name: 'Vipul',
@@ -131,6 +134,27 @@ Mr. Kumar also serves as Panel Counsel for the Indian Society for Technical Educ
     languages: [], // Not specified
     participatedCases: [], // Empty for now
     imageUrl: '/attorney-4.jpg',
+  },
+  {
+    Name: 'Taniya',
+    name: 'Advocate Taniya',
+    position: 'Litigation Counsel',
+    practiceArea: ['Civil Law', 'Criminal Law', 'Matrimonial Disputes'],
+    experience: 'Litigation Practice',
+    address: 'India',
+    phone: '8586009329',
+    email: 'advocatetaniya22@gmail.com',
+    personalExperience: `Advocate Taniya is a dedicated and result-oriented legal professional practicing as a Litigation Counsel with experience in handling a wide range of legal matters. She provides strategic legal advice and strong courtroom representation while maintaining the highest standards of professionalism and ethics.
+
+She regularly advises and represents clients in Civil, Criminal, and Matrimonial disputes. Her work focuses on understanding each client’s legal concerns in depth and providing effective legal solutions through careful legal research, strong drafting skills, and persuasive advocacy.
+
+Advocate Taniya believes in offering clear legal guidance, practical solutions, and committed representation throughout every stage of litigation. She emphasizes confidentiality, trust-building with clients, and handling each matter with sincerity and attention to detail.
+
+Her professional objective is to deliver reliable legal assistance and achieve the best possible outcomes for her clients through diligent preparation and effective advocacy.`,
+    education: ['B.A. LL.B., Chaudhary Charan Singh University'],
+    languages: ['English', 'Hindi'],
+    participatedCases: [],
+    imageUrl: '/attorney-5.png',
   },
 ];
 
@@ -210,10 +234,12 @@ const AdvocatePage = async ({
               <div className="grid grid-cols-[150px_1fr] gap-y-5 gap-x-4 px-4 py-4">
                 {rightContent.map((item, index) => (
                   <React.Fragment key={index}>
-                    <span className="font-bold text-gray-600 text-xl">
+                    <span className="font-bold text-gray-600 sm:text-lg md:text-xl">
                       {item.key}:
                     </span>
-                    <span className="text-gray-900">{item.value}</span>
+                    <span className="text-gray-900 break-all">
+                      {item.value}
+                    </span>
                   </React.Fragment>
                 ))}
               </div>
@@ -227,15 +253,17 @@ const AdvocatePage = async ({
           <div className="lg:col-span-2 space-y-8">
             {/* Personal Experience */}
             <div className="flex flex-col gap-4">
-              <h3 className="text-4xl">Personal Experience</h3>
-              <p className="text-gray-700 leading-relaxed text-lg">
+              <h3 className="text-4xl sm:text-3xl">Personal Experience</h3>
+              <p className="text-gray-700 leading-relaxed text-muted-foreground">
                 {advocate?.personalExperience}
               </p>
             </div>
 
             {/* Education & Court Admissions */}
             <div className="flex flex-col gap-4">
-              <h3 className="text-4xl">Education & Court Admissions</h3>
+              <h3 className="text-4xl sm:text-3xl">
+                Education & Court Admissions
+              </h3>
               <div className="space-y-4">
                 <div>
                   <div className="flex items-center space-x-2 mb-2">
@@ -244,7 +272,10 @@ const AdvocatePage = async ({
                   </div>
                   <ul className="list-disc list-inside space-y-1">
                     {advocate?.education.map((edu, index) => (
-                      <li key={index} className="text-gray-700 text-lg">
+                      <li
+                        key={index}
+                        className="text-gray-700 leading-relaxed text-muted-foreground"
+                      >
                         {edu}
                       </li>
                     ))}
@@ -255,7 +286,7 @@ const AdvocatePage = async ({
                     <Languages className="h-5 w-5 text-grey-600" />
                     <span className="font-semibold ">Languages</span>
                   </div>
-                  <p className="text-gray-700 text-lg">
+                  <p className="text-gray-700 leading-relaxed text-muted-foreground">
                     {advocate?.languages.join(', ')}
                   </p>
                 </div>
@@ -264,35 +295,45 @@ const AdvocatePage = async ({
 
             {/* Participated Cases */}
             <div className="flex flex-col gap-4">
-              <h3 className="text-4xl">Participated Cases</h3>
+              <h3 className="text-4xl sm:text-3xl">Participated Cases</h3>
               <div className="space-y-4">
                 {(advocate?.participatedCases as string[])?.length > 0 ? (
                   <ul className="list-disc list-inside space-y-1">
                     {advocate?.participatedCases.map((case_, index) => (
-                      <li key={index} className="text-gray-700 ">
+                      <li
+                        key={index}
+                        className="text-gray-700 leading-relaxed text-muted-foreground"
+                      >
                         {case_}
                       </li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-gray-500">No cases listed yet.</p>
+                  <p className="text-gray-500 leading-relaxed text-muted-foreground">
+                    No cases listed yet.
+                  </p>
                 )}
               </div>
             </div>
 
             <div className="flex flex-col gap-4">
-              <h3 className="text-4xl">Practice Area</h3>
+              <h3 className="text-4xl sm:text-3xl">Practice Area</h3>
               <div className="space-y-4">
                 {(advocate?.practiceArea as string[])?.length > 0 ? (
                   <ul className="list-disc list-inside space-y-1">
                     {advocate?.practiceArea.map((area, index) => (
-                      <li key={index} className="text-gray-700 ">
+                      <li
+                        key={index}
+                        className="text-gray-700 leading-relaxed text-muted-foreground"
+                      >
                         {area}
                       </li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-gray-500">No cases listed yet.</p>
+                  <p className="text-gray-500 leading-relaxed text-muted-foreground">
+                    No cases listed yet.
+                  </p>
                 )}
               </div>
             </div>

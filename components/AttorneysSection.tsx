@@ -10,22 +10,32 @@ import Link from 'next/link';
 
 const attorneys = [
   {
-    img: '/attorney-1.jpg',
+    img: '/attorney-6.jpeg',
     name: 'Puneet Kumar',
     role: 'Family Lawyer',
     Name: 'Puneet',
+    className: ' object-center',
   },
   {
-    img: '/attorney-2.jpg',
+    img: '/attorney-1.jpg',
     name: 'Rakesh Kumar',
     role: 'Divorce Lawyer',
     Name: 'Rakesh',
+    className: 'object-top',
   },
   {
     img: '/attorney-4.jpg',
     name: 'Vipul Kumar',
     role: 'Criminal Lawyer',
     Name: 'Vipul',
+    className: 'object-top',
+  },
+  {
+    img: '/attorney-5.png',
+    name: 'Taniya',
+    role: 'Litigation Counsel',
+    Name: 'Taniya',
+    className: 'object-top',
   },
 ];
 
@@ -60,7 +70,7 @@ const AttorneysSection = () => {
                       <Image
                         src={attorney.img}
                         alt={attorney.name}
-                        className="h-60 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                        className={`h-60 w-full object-cover transition-transform duration-500 group-hover:scale-105 ${attorney.className}`}
                         width={200}
                         height={200}
                       />

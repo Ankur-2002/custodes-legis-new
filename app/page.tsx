@@ -6,7 +6,6 @@ import ConsultingForm from '@/components/ConsultingForm';
 import HeroSection from '@/components/HeroSection';
 import PracticeAreas from '@/components/PracticeAreas';
 import ServiceCards from '@/components/ServiceCards';
-import StatsSection from '@/components/StatsSection';
 import Testimonials from '@/components/Testimonials';
 
 export default function Home() {
