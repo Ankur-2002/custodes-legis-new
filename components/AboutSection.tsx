@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const AboutSection = () => {
   return (
     <section id="about" className="bg-background py-20 lg:py-28">
@@ -27,11 +29,13 @@ const AboutSection = () => {
               More About Us
             </a>
           </div>
-          <div className="overflow-hidden">
-            <img
+          <div className="overflow-clip">
+            <Image
+              width={500}
+              height={500}
               src="/about-image.jpg"
               alt="Law office with legal books and scales of justice"
-              className="h-full w-full object-cover shadow-2xl transition-transform duration-500 hover:scale-105"
+              className="h-full w-full object-cover shadow-2xl transition-transform duration-500 hover:scale-105 object-small-animation"
             />
           </div>
         </div>

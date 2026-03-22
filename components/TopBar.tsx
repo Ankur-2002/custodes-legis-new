@@ -22,7 +22,7 @@ const TopBar = () => {
           href="#consulting"
           className="btn-outline-gold hidden py-1.5 text-xs sm:inline-block"
         >
-          Free Consulting
+          Schedule a Consultation
         </a>
       </div>
     </div>

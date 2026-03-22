@@ -259,3 +259,21 @@ body {
   background-position-x: right;
   z-index: -2;
 }
+
+.object-small-animation {
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range: entry;
+}
+
+@keyframes fade-in {
+  from {
+    scale: 0.8;
+    opacity: 0.5;
+  }
+
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}

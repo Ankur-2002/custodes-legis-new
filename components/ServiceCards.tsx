@@ -4,10 +4,10 @@ const services = [
   {
     icon: CircleArrowOutDownRight,
     subtitle: 'Success Full Cases',
-    value: '4800+',
+    value: '500+',
   },
-  { icon: Scale, subtitle: 'Years of Legal Excellence', value: '30+' },
-  { icon: Users, subtitle: 'Practice Areas Covered', value: '15+' },
+  { icon: Scale, subtitle: 'Years of Legal Excellence', value: '17+' },
+  { icon: Users, subtitle: 'Practice Areas Covered', value: '20+' },
 ];
 
 const ServiceCards = () => {

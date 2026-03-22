@@ -6,7 +6,7 @@ const HeroSection = () => {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(/hero-attorney.jpg)` }}
+        style={{ backgroundImage: `url(/hero-attorney.png)` }}
       />
       {/* Overlay */}
       <div className="absolute inset-0 bg-navy/60" />
@@ -14,13 +14,13 @@ const HeroSection = () => {
       <div className="container relative z-10 mx-auto px-4">
         <div className="max-w-2xl">
           <p className="section-subtitle mb-4 animate-fade-in-up">
-            Leading Law Firm in India
+            “A Trusted Network of Legal Professionals Across India”
           </p>
           <h1
             className="mb-8 font-heading text-4xl font-bold leading-tight text-primary-foreground md:text-5xl lg:text-6xl"
             style={{ animationDelay: '0.2s' }}
           >
-            Professional Legal Services for Businesses & Individuals
+            Professional Legal Services for Corporates & Private Clients
           </h1>
           <a
             href="#consulting"
