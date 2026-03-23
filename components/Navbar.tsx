@@ -6,11 +6,11 @@ import Link from 'next/link';
 
 const navLinks = [
   { label: 'HOME', href: '/' },
-  { label: 'ABOUT', href: '/#about' },
-  { label: 'PRACTICE AREA', href: '/#practice' },
-  { label: 'CASES', href: '/#cases' },
-  { label: 'NEWS', href: '/#blog' },
-  { label: 'CONTACT', href: '/#consulting' },
+  { label: 'ABOUT', href: '#about' },
+  { label: 'PRACTICE AREA', href: '#practice' },
+  { label: 'CASES', href: '#cases' },
+  { label: 'NEWS', href: '#blog' },
+  { label: 'CONTACT', href: '#consulting' },
 ];
 
 const Navbar = () => {
