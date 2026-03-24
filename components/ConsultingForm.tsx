@@ -13,7 +13,7 @@ const practiceOptions = [
   'Dispute Resolution',
 ];
 
-const ConsultingForm = () => {
+const ConsultingForm = ({ bgClass }: { bgClass?: string }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -28,7 +28,10 @@ const ConsultingForm = () => {
   };
 
   return (
-    <section id="consulting" className="bg-cream py-20 lg:py-28">
+    <section
+      id="consulting"
+      className={`bg-cream py-20 lg:py-28 ${bgClass || ''}`}
+    >
       <div className="container mx-auto px-4">
         <div className="grid items-start gap-12 lg:grid-cols-2">
           <div>

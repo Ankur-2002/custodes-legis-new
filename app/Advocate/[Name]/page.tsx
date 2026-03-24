@@ -38,10 +38,6 @@ const data = [
       'Drafting of Agreements and Legal Documents',
       'Surrogacy (Regulation) Act Advisory and Litigation',
     ],
-    experience: '10+ Years',
-    address: 'Delhi High Court & District Courts, Delhi, India',
-    phone: 'N/A',
-    email: 'N/A',
     personalExperience: `Adv. Rakesh Kumar is a Senior Associate at Custodes Legis – Guardians of the Law, and also serves as a Government Panel Counsel. Appearing regularly before the Delhi High Court, District Courts, Tribunals, and quasi-judicial authorities across Delhi, he represents clients in a wide spectrum of legal matters including civil and criminal litigation, matrimonial and family disputes, property and real estate conflicts, cheque bounce matters under Section 138 of the Negotiable Instruments Act, and recovery proceedings.
 
 His legal practice also extends to corporate and commercial advisory, startup legal compliance, cyber crime matters, municipal and licensing laws, legal metrology, and drafting of agreements and legal documentation. Through Custodes Legis, he also provides business licensing consultancy, assisting individuals, entrepreneurs, and startups in securing regulatory approvals, trade licenses, and statutory compliances required to operate lawfully and efficiently.
@@ -57,7 +53,7 @@ Known for his structured legal strategy and client-focused approach, he speciali
     participatedCases: [
       'Surrogacy (Regulation) Act landmark matter featured in Indian Express',
     ],
-    imageUrl: '/attorney-1.jpg',
+    imageUrl: '/attorney-2.jpg',
   },
   {
     Name: 'Puneet',
@@ -112,8 +108,6 @@ At Custodes Legis, he strengthens the firm’s litigation practice by providing 
       'Consumer Litigation',
       'Criminal Defence',
     ],
-    experience: '5+ Years',
-    address: '', // Not provided in dataset
     phone: '9015535897',
     email: 'advvipulkumar88@gmail.com',
     personalExperience: `Vipul Kumar is a practising advocate and the founder of Custodeslegis, with more than five years of professional experience in litigation, commercial dispute resolution, contract drafting, and startup legal advisory. He represents clients before courts and legal forums in matters involving civil, commercial, and matrimonial disputes, while also advising startups and businesses on strategic legal structuring and contractual frameworks.
@@ -140,8 +134,6 @@ Mr. Kumar also serves as Panel Counsel for the Indian Society for Technical Educ
     name: 'Advocate Taniya',
     position: 'Litigation Counsel',
     practiceArea: ['Civil Law', 'Criminal Law', 'Matrimonial Disputes'],
-    experience: 'Litigation Practice',
-    address: 'India',
     phone: '8586009329',
     email: 'advocatetaniya22@gmail.com',
     personalExperience: `Advocate Taniya is a dedicated and result-oriented legal professional practicing as a Litigation Counsel with experience in handling a wide range of legal matters. She provides strategic legal advice and strong courtroom representation while maintaining the highest standards of professionalism and ethics.
@@ -177,7 +169,7 @@ const AdvocatePage = async ({
     },
     {
       key: 'Practice Area',
-      value: advocate?.practiceArea.slice(0, 5).join(', '),
+      value: advocate?.practiceArea.join(', '),
     },
     {
       key: 'Phone',
@@ -232,16 +224,18 @@ const AdvocatePage = async ({
             </div>
             <div className="flex flex-col min-h-[500px]">
               <div className="grid grid-cols-[150px_1fr] gap-y-5 gap-x-4 px-4 py-4">
-                {rightContent.map((item, index) => (
-                  <React.Fragment key={index}>
-                    <span className="font-bold text-gray-600 sm:text-lg md:text-xl">
-                      {item.key}:
-                    </span>
-                    <span className="text-gray-900 break-all">
-                      {item.value}
-                    </span>
-                  </React.Fragment>
-                ))}
+                {rightContent.map((item, index) =>
+                  item.value ? (
+                    <React.Fragment key={index}>
+                      <span className="font-bold text-gray-600 sm:text-lg md:text-xl">
+                        {item.key}:
+                      </span>
+                      <span className="text-gray-900 break-all">
+                        {item.value}
+                      </span>
+                    </React.Fragment>
+                  ) : null,
+                )}
               </div>
             </div>
           </div>

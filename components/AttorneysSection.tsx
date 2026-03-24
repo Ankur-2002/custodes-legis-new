@@ -17,11 +17,11 @@ const attorneys = [
     className: ' object-center',
   },
   {
-    img: '/attorney-1.jpg',
+    img: '/attorney-2.jpg',
     name: 'Rakesh Kumar',
     role: 'Divorce Lawyer',
     Name: 'Rakesh',
-    className: 'object-top',
+    className: 'object-center',
   },
   {
     img: '/attorney-4.jpg',
