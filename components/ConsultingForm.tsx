@@ -2,15 +2,18 @@
 import { useState } from 'react';
 
 const practiceOptions = [
-  'Litigation',
+  'Corporate / Business Law',
+  'Consumer Protection Law',
+  'Arbitration & ADR',
   'Family Law',
-  'Business Disputes',
-  'Contract Law',
-  'Property Law',
-  'Civil Law',
+  'Startup Compliance',
+  'Intellectual Property Law (IPR)',
+  'Property / Real Estate Law',
+  'Cyber Law',
+  'Banking & Finance Law',
+  'Insurance Law',
+  'Legal Metrology',
   'Criminal Law',
-  'Legal Consultation',
-  'Dispute Resolution',
 ];
 
 const ConsultingForm = ({ bgClass }: { bgClass?: string }) => {

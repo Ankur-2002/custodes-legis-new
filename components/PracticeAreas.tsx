@@ -5,68 +5,14 @@ import {
   AlertTriangle,
   GraduationCap,
   Home,
+  Lamp,
 } from 'lucide-react';
 
 const practices = [
   {
-    icon: Shield,
-    title: 'Criminal Law',
-    desc: 'Handling offenses like theft, assault, fraud, and other criminal matters.',
-  },
-  {
-    icon: Shield,
-    title: 'Civil Law',
-    desc: 'Non-criminal disputes such as property, contracts, and recovery suits.',
-  },
-  {
     icon: Heart,
     title: 'Corporate / Business Law',
     desc: 'Company formation, compliance, mergers, and corporate governance.',
-  },
-  {
-    icon: Briefcase,
-    title: 'Family Law',
-    desc: 'Legal guidance for divorce, child custody, and family-related matters.',
-  },
-  {
-    icon: Shield,
-    title: 'Constitutional Law',
-    desc: 'Cases involving fundamental rights, writ petitions, and constitutional issues.',
-  },
-  {
-    icon: Home,
-    title: 'Property / Real Estate Law',
-    desc: 'Land disputes, ownership issues, and real estate transactions.',
-  },
-  {
-    icon: GraduationCap,
-    title: 'Intellectual Property Law (IPR)',
-    desc: 'Protection of copyrights, trademarks, patents, and creative rights.',
-  },
-  {
-    icon: AlertTriangle,
-    title: 'Taxation Law',
-    desc: 'Income tax, GST, and resolution of tax-related disputes.',
-  },
-  {
-    icon: Briefcase,
-    title: 'Labour & Employment Law',
-    desc: 'Workplace disputes, employee rights, and employment regulations.',
-  },
-  {
-    icon: AlertTriangle,
-    title: 'Environmental Law',
-    desc: 'Cases related to pollution, environmental protection, and regulations.',
-  },
-  {
-    icon: Shield,
-    title: 'Cyber Law',
-    desc: 'Legal matters involving online fraud, data privacy, and cybercrime.',
-  },
-  {
-    icon: Heart,
-    title: 'Banking & Finance Law',
-    desc: 'Loans, insolvency, and financial dispute resolution.',
   },
   {
     icon: AlertTriangle,
@@ -80,23 +26,51 @@ const practices = [
   },
   {
     icon: Briefcase,
-    title: 'Immigration Law',
-    desc: 'Visas, citizenship, and deportation-related legal services.',
+    title: 'Family Law',
+    desc: 'Legal guidance for divorce, child custody, and family-related matters.',
   },
+  {
+    title: 'Startup Compliance',
+    desc: 'Legal guidance for startups and emerging businesses.',
+    icon: Briefcase,
+  },
+  {
+    icon: GraduationCap,
+    title: 'Intellectual Property Law (IPR)',
+    desc: 'Protection of copyrights, trademarks, patents, and creative rights.',
+  },
+  {
+    icon: Home,
+    title: 'Property / Real Estate Law',
+    desc: 'Land disputes, ownership issues, and real estate transactions.',
+  },
+  {
+    icon: Shield,
+    title: 'Cyber Law',
+    desc: 'Legal matters involving online fraud, data privacy, and cybercrime.',
+  },
+
+  {
+    icon: Heart,
+    title: 'Banking & Finance Law',
+    desc: 'Loans, insolvency, and financial dispute resolution.',
+  },
+
   {
     icon: AlertTriangle,
     title: 'Insurance Law',
     desc: 'Insurance claims, policy disputes, and coverage issues.',
   },
+
   {
-    icon: Home,
-    title: 'Maritime Law',
-    desc: 'Shipping, sea-related disputes, and maritime regulations.',
+    icon: Lamp,
+    title: 'Legal Metrology',
+    desc: 'Legal matters involving online fraud, data privacy, and cybercrime.',
   },
   {
     icon: Shield,
-    title: 'Human Rights Law',
-    desc: 'Protection and enforcement of fundamental human rights.',
+    title: 'Criminal Law',
+    desc: 'Handling offenses like theft, assault, fraud, and other criminal matters.',
   },
 ];
 

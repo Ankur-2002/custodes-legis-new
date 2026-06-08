@@ -67,11 +67,11 @@ const Footer = () => {
               Practice Area
             </h3>
             {[
+              'Corporate / Business Law',
+              'Consumer Protection Law',
+              'Arbitration & ADR',
               'Family Law',
-              'Criminal Law',
-              'Business Law',
-              'Personal Injury',
-              'Education Law',
+              'Startup Compliance',
             ].map(area => (
               <a
                 key={area}
@@ -92,19 +92,23 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
                 <p className="text-sm text-primary-foreground/60">
-                  121 King Street, Melbourne, Australia
+                  CHAMBER NO.377, CIVIL WING, TIS HAZARI COURTS, DELHI-110054
                 </p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-gold" />
                 <p className="text-sm text-primary-foreground/60">
-                  3164-5456854
+                  <a href="tel:+919718302748">97183-02748</a> |{' '}
+                  <a href="tel:+919990476969">99904-76969</a>
                 </p>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-gold" />
                 <p className="text-sm text-primary-foreground/60">
-                  info@custodeslegis.com
+                  <a href="mailto:puneetkumar@custodeslegis.com">
+                    {' '}
+                    puneetkumar@custodeslegis.com
+                  </a>
                 </p>
               </div>
             </div>

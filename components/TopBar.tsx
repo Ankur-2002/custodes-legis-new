@@ -11,7 +11,8 @@ const TopBar = () => {
           </span>
           <span className="flex items-center gap-2">
             <Phone className="h-4 w-4 text-gold" />
-            99904-76969
+            <a href="tel:+919718302748">97183-02748</a> |
+            <a href="tel:+919990476969">99904-76969</a>
           </span>
           <span className="hidden items-center gap-2 md:flex">
             <Clock className="h-4 w-4 text-gold" />
