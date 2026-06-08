@@ -16,7 +16,7 @@ export default function Home() {
       <AboutSection />
       <PracticeAreas />
       <CaseStudies />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <AttorneysSection />
       <ConsultingForm />
       {/* <StatsSection /> */}
