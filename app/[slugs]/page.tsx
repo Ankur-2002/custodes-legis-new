@@ -1,12 +1,12 @@
 import AboutSection from '@/components/AboutSection';
 import AttorneysSection from '@/components/AttorneysSection';
 import BlogSection from '@/components/BlogSection';
-import CaseStudies from '@/components/CaseStudies';
+import Clients from '@/components/Clients';
 import ConsultingForm from '@/components/ConsultingForm';
 import HeroSection from '@/components/HeroSection';
 import PracticeAreas from '@/components/PracticeAreas';
 import ServiceCards from '@/components/ServiceCards';
-import Testimonials from '@/components/Testimonials';
+// import Testimonials from '@/components/Testimonials';
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <ServiceCards />
       <AboutSection />
       <PracticeAreas />
-      <CaseStudies />
+      <Clients />
       {/* <Testimonials /> */}
       <AttorneysSection />
       <ConsultingForm />
