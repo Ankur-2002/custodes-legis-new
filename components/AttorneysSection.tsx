@@ -69,6 +69,7 @@ const AttorneysSection = () => {
                         className={`h-80 w-full object-cover transition-transform duration-500 group-hover:scale-105 ${attorney.className}`}
                         width={200}
                         height={200}
+                        priority={true}
                       />
                       <div className="absolute inset-0 bg-navy/0 transition-all duration-300 group-hover:bg-navy/40" />
                     </div>
