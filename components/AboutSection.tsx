@@ -11,21 +11,18 @@ const AboutSection = () => {
               Professional Legal Services
             </h2>
             <p className="mb-4 leading-relaxed text-muted-foreground">
-              Our law firm is dedicated to providing reliable and professional
-              legal services to individuals, businesses, and organisations. With
-              a team of experienced lawyers, we offer strategic legal guidance
-              across corporate law, litigation, family law, and business
-              disputes, ensuring that our clients receive clear advice and
-              strong representation.
+              Custodes Legis is a full-service law firm committed to providing
+              strategic legal solutions and effective representation to
+              individuals, businesses, startups, and institutions. Guided by the
+              principle of being "Guardians of the Law," we combine legal
+              expertise, practical insight, and strong advocacy to protect our
+              clients' rights and interests. Our team advises and represents
+              clients across litigation, dispute resolution, corporate and
+              commercial matters, property disputes, family law, intellectual
+              property, consumer protection, banking and finance, insurance
+              claims, cyber law, and startup compliance.
             </p>
-            <p className="mb-8 leading-relaxed text-muted-foreground">
-              We believe that every client deserves personalised attention and
-              practical legal solutions. By combining deep legal knowledge with
-              a client-focused approach, our firm works diligently to protect
-              your rights, resolve complex legal challenges, and support your
-              long-term success.
-            </p>
-            <a href="#" className="btn-gold">
+            <a href="/about" className="btn-gold">
               More About Us
             </a>
           </div>
