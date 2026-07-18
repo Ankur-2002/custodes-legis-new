@@ -19,6 +19,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Custodes-Legis',
   description: 'A legal management application for custodial services.',
+  icons: {
+    icon: '/custodes_legis_favicon.png',
+    shortcut: '/custodes_legis_favicon.png',
+    apple: '/custodes_legis_favicon.png',
+  },
 };
 
 export default function RootLayout({
