@@ -5,10 +5,10 @@ const TopBar = () => {
     <div className="bg-navy-dark py-2.5 text-sm">
       <div className="container mx-auto flex flex-wrap items-center justify-between px-4">
         <div className="flex flex-wrap items-center gap-6 text-primary-foreground/80">
-          <span className="flex items-center gap-2">
+          <a href="https://maps.app.goo.gl/9wBUHM116kxCpEHq5" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gold transition-colors">
             <MapPin className="h-4 w-4 text-gold" />
             Tis Hazari, Delhi
-          </span>
+          </a>
           <span className="flex items-center gap-2">
             <Phone className="h-4 w-4 text-gold" />
             <a href="tel:+919718302748">97183-02748</a> |
