@@ -53,7 +53,7 @@ Known for his structured legal strategy and client-focused approach, he speciali
     participatedCases: [
       'Surrogacy (Regulation) Act landmark matter featured in Indian Express',
     ],
-    imageUrl: '/attorney-2.jpg',
+    imageUrl: '/attorney-2.png',
   },
   {
     Name: 'Puneet',

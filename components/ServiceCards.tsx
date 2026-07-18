@@ -3,7 +3,7 @@ import { Scale, Users, CircleArrowOutDownRight } from 'lucide-react';
 const services = [
   {
     icon: CircleArrowOutDownRight,
-    subtitle: 'Success Full Cases',
+    subtitle: 'Successfull Cases',
     value: '500+',
   },
   { icon: Scale, subtitle: 'Years of Legal Excellence', value: '17+' },

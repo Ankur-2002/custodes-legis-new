@@ -16,7 +16,7 @@ const attorneys = [
     className: ' object-center',
   },
   {
-    img: '/attorney-7.png',
+    img: '/attorney-2.png',
     name: 'Rakesh Kumar',
     Name: 'Rakesh',
     className: 'object-top',
