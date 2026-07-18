@@ -52,18 +52,18 @@ const page = () => {
               Professional Legal Services
             </h2>
             <p className="mb-4 leading-relaxed text-muted-foreground text-balance">
-              We are CUSTODESLEGIS, a law firm serving clients across India with
-              a commitment to excellence, integrity, and results-driven legal
-              solutions. Our team of experienced lawyers provides strategic
-              legal guidance across corporate law, litigation, family law, and
-              business disputes, ensuring clear advice and strong representation
-              at every stage.
+              We are Custodes-Legis, a law firm serving clients across India
+              with a commitment to excellence, integrity, and results-driven
+              legal solutions. Our team of experienced lawyers provides
+              strategic legal guidance across corporate law, litigation, family
+              law, and business disputes, ensuring clear advice and strong
+              representation at every stage.
             </p>
 
             <p className="mb-4 italic text-muted-foreground text-balance">
-              “CUSTODESLEGIS symbolises our role as custodians of justice, where
-              every matter entrusted to us is handled with diligence, precision,
-              and the highest respect for the rule of law.”
+              “Custodes-Legis symbolises our role as custodians of justice,
+              where every matter entrusted to us is handled with diligence,
+              precision, and the highest respect for the rule of law.”
             </p>
             <p className="mb-8 leading-relaxed text-muted-foreground text-balance">
               We believe in delivering personalised attention and practical

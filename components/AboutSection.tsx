@@ -4,7 +4,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="bg-background py-20 lg:py-28">
       <div className="container mx-auto px-4">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className="grid items-center gap-12 lg:grid-cols-2 justify-items-center">
           <div>
             <p className="section-subtitle mb-3">About Our Law Firm</p>
             <h2 className="section-title mb-6 text-foreground">
@@ -30,9 +30,9 @@ const AboutSection = () => {
             <Image
               width={500}
               height={500}
-              src="/about-image.jpg"
+              src="/about-image-2.png"
               alt="Law office with legal books and scales of justice"
-              className="h-full w-full object-cover shadow-2xl transition-transform duration-500 hover:scale-105 object-small-animation"
+              className="object-cover shadow-2xl transition-transform duration-500 hover:scale-105 object-small-animation"
             />
           </div>
         </div>
