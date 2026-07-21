@@ -230,9 +230,7 @@ const AdvocatePage = async ({
                       <span className="font-bold text-gray-600 sm:text-lg md:text-xl">
                         {item.key}:
                       </span>
-                      <span className="text-gray-900 break-all">
-                        {item.value}
-                      </span>
+                      <span className="text-gray-900 ">{item.value}</span>
                     </React.Fragment>
                   ) : null,
                 )}
@@ -241,8 +239,8 @@ const AdvocatePage = async ({
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4 sm:px-8 sm:py-8 lg:px-12 lg:py-12 max-w-6xl">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
             {/* Personal Experience */}
@@ -331,48 +329,6 @@ const AdvocatePage = async ({
                 )}
               </div>
             </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="lg:col-span-1">
-            <Card>
-              <CardHeader>
-                {/* No bold, No semibold */}
-                <CardTitle className="text-4xl ">Contact Me</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form className="space-y-4">
-                  <div>
-                    <Label htmlFor="name">Your Name</Label>
-                    <Input id="name" placeholder="Enter your name" />
-                  </div>
-                  <div>
-                    <Label htmlFor="email">Your Email</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="Enter your email"
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="phone">Your Phone</Label>
-                    <Input id="phone" placeholder="Enter your phone" />
-                  </div>
-                  <div>
-                    <Label htmlFor="address">Address</Label>
-                    <Input id="address" placeholder="Enter your address" />
-                  </div>
-                  <div>
-                    <Label htmlFor="description">Case Description</Label>
-                    <Textarea
-                      id="description"
-                      placeholder="Describe your case..."
-                    />
-                  </div>
-                  <Button className="w-full">Appointment</Button>
-                </form>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

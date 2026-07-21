@@ -105,9 +105,9 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-gold" />
                 <p className="text-sm text-primary-foreground/60">
-                  <a href="mailto:puneetkumar@custodeslegis.com">
+                  <a href="mailto:associates@custodeslegis.com">
                     {' '}
-                    puneetkumar@custodeslegis.com
+                    associates@custodeslegis.com
                   </a>
                 </p>
               </div>
