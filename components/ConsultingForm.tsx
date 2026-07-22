@@ -67,7 +67,7 @@ const ConsultingForm = ({ bgClass }: { bgClass?: string }) => {
 
           <form onSubmit={handleSubmit} className="space-y-4 bg-navy p-8">
             <h3 className="mb-4 font-heading text-2xl font-bold text-primary-foreground">
-              Request Legal Advice
+              Request Consultation
             </h3>
             <input
               type="text"
